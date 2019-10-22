@@ -1,0 +1,266 @@
+body{
+    margin:0;
+}
+.clearfix
+{
+    clear:both;
+}
+.my-header
+{
+    background:skyblue;
+    height: 100px;
+}
+.my-container
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center
+}
+#header-container .logo
+{
+    background-image: url(image/My-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100px;
+    width:15%;
+}
+.menu
+{
+    width:50%;
+}
+.menu ul 
+{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    padding: 35px 0 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu ul li:hover 
+{
+    background: black;
+    color: white;
+}
+
+.search
+{
+    font-size: 40px;
+    cursor: pointer;
+}
+.parent
+{
+    position: relative;
+}
+.parent .child
+{
+    position: absolute;
+    height: 0%;
+    top:100%;
+    width: 100%;
+    overflow: hidden;
+    background: gray;
+    z-index: 1;
+    transition: height 0.5s ease-in-out;
+
+}
+.parent:hover .child
+{
+    height:200%;
+}
+.parent .child li
+{
+    width: 100%;
+    float: left;
+}
+.slider .fas
+{
+    font-size:50px;
+}
+.slider .text
+{
+    font-size: 50px;
+    font-style: italic;
+    font-family: initial;
+    color: yellow;
+    position: absolute;
+    left:40px;
+    bottom:35px;
+    padding: 10px 12px;
+    text-align: center;
+    background: #87ceeb3b;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+.slider .fas
+{
+    font-size: 40px;
+}
+.content 
+{
+    padding: 15px;
+    border: 1px solid black;
+}
+.content .title {
+    padding: 5px 25px;
+    background-color: skyblue;
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0px 0px grey
+}
+.content .controls 
+{
+    float:right;
+}
+.content .controls button
+{
+    padding: 5px 13px;
+    background: white;
+    border:1px solid black;
+    box-shadow: 0px 0px grey;
+    outline: none
+}
+.content .controls button:hover,
+.content .title:hover
+{
+    box-shadow: 3px 2px grey;
+}
+.content .list {
+    padding-top: 30px;
+}
+
+.content .list .item{
+    width: 32%;
+    float: left;
+    padding:0 35px;
+    margin-right: 2%;
+    margin-bottom: 15px;
+}
+
+.content .list .item:nth-child(3n+3),
+#footer .main .item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.list .item .image {
+    width:100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.list .item .eff-content-1 .eff-text{
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list .item .eff-content-1 p{
+    margin:0
+}
+.content .item span {
+    float: right;
+    font-style: italic;
+}
+.paging .page{
+    display: inline-block;
+}
+.paging .page button{
+    font-size:12px;
+    padding:5px 10px;
+    margin-right:4px;
+    border:1px solid black;
+    cursor: pointer;
+    outline:none
+}
+.paging .page button:nth-child(10n+3){
+    border:none;
+    cursor: default;
+}
+.paging p{
+    float:right;
+    font-style: italic
+}
+/*footer*/
+#footer{
+    background: skyblue;
+    color:white
+}
+#footer .foot-logo
+{
+    background-image: url(image/My-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:125px;
+    width:45%;
+}
+.main{
+    padding:15px;
+    border-bottom: 1px solid white
+}
+#footer .main .item {
+    width: 32%;
+    float: left;
+    padding:0 10px;
+    margin-right: 2%;
+    margin-bottom: 15px;
+}
+.item i{
+    font-size:50px;
+    color: black
+}
+.item .post{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.item h4{
+    padding:10px;
+    background: orange;
+    display: inline-block
+}
+.item .picture{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:130px;
+    width: 40%;
+    display:inline-block
+}
+.item .text{
+    float:right;
+    text-align: right;
+}
+.item p{
+    font-style: italic
+}
+.item ul li:hover{
+    color: black
+}
+.item.last p{
+    font-size: 20px;
+    cursor: pointer;
+}
+.item.last p>span{
+    float:right
+}
+.my-container>p{
+    text-align: right;
+    font-style: italic
+}
